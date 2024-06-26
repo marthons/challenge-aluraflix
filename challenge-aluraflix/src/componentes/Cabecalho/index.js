@@ -1,14 +1,16 @@
 import { Link } from 'react-router-dom';
-import  './Cabecalho.css';
+import './Cabecalho.css';
 
 const Cabecalho = () => {
   return (
-    <header className="header">
-      <div className="logo">MarthonsFlix</div>
-      <nav>
-        <Link to="/">Página Inicial</Link>
-        <Link to="/new-video">Novo Vídeo</Link>
-      </nav>
+    <header className="cabecalho">
+      <div className='logo'>MarthonsFlix</div>
+      <div className='navegação'>
+        <nav>
+          <Link to="/">Página Inicial</Link>
+          <Link to="/novo-video">Novo Vídeo</Link>
+        </nav>
+      </div>
     </header>
   );
 };

@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+:root {
+  --cor-fundo-1: #830024;
+  --cor-fundo-2: #e16639;
+  --texto-1: #fff0f3;
+  --texto-2: #44021e;
+  --selecionado: #ff4d6d;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: var(--cor-fundo-1);
+  color: #333;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Estilos Globais */
+body {
+  line-height: 1.6;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 10px;
+  color: var(--texto-2);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--selecionado);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--cor-fundo-2);
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--selecionado);
+}
+
+/* Flexbox Utility Classes */
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
 }

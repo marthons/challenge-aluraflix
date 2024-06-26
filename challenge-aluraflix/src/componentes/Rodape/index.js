@@ -3,7 +3,7 @@ import './Rodape.css';
 const Rodape = () => {
     return (
       <footer className="footer">
-        <div className="logo">MarthonsFlix</div>
+        <div className="logo">Marthons & Alura</div>
       </footer>
     );
   };
