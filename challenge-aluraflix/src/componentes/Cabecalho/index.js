@@ -6,9 +6,9 @@ const Cabecalho = () => {
     <header className="cabecalho">
       <div className='logo'>MarthonsFlix</div>
       <div className='navegação'>
-        <nav>
-          <Link to="/">Página Inicial</Link>
-          <Link to="/novo-video">Novo Vídeo</Link>
+        <nav >
+          <Link className='link' to="/">Página Inicial</Link>
+          <Link className='link' to="/novo-video">Novo Vídeo</Link>
         </nav>
       </div>
     </header>

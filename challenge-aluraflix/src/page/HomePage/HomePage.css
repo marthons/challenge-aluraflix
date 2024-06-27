@@ -4,25 +4,22 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 50px 20px;
-    background-color: #f0f0f0;
+    background-color: var(--cor-fundo-2);
     min-height: 100vh;
   }
   
   .home-page h1 {
     font-size: 3rem;
-    color: #ff4500;
-    margin-bottom: 20px;
+    color: var(--texto-1);
   }
   
   .home-page h2 {
     font-size: 2rem;
-    color: #333;
-    margin-bottom: 15px;
+    color: var(--texto-2);
   }
   
   .home-page p {
     font-size: 1.2rem;
-    color: #666;
+    color: var(--texto-1);
   }
   

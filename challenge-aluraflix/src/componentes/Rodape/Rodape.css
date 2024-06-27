@@ -1,15 +1,36 @@
 .rodape {
     width: 100%;
-    background-color: #333;
-    padding: 15px;
-    color: white;
-    text-align: center;
-    position: absolute;
+    background-color: var(--cor-fundo-3);
+    padding: 5px;
+    color: var(--texto-1);
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    position: relative;
     bottom: 0;
   }
+
   
-  .rodape p {
+  
+  .logo {
+    height: 40px; 
+  }
+  
+  .text {
+    display: flex;
     margin: 0;
     font-size: 0.9rem;
+  }
+
+  .text div {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    margin: 0 50px;
+  }
+
+  .logo-text {
+    width: 3%;
+    object-fit: contain;
   }
   
