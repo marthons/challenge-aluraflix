@@ -1,0 +1,13 @@
+.botao {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: var(--texto-1);
+    background-color: var(--cor-fundo-3);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: var(--selecionado);
+}
