@@ -3,6 +3,7 @@ import Botao from '../Botao';
 import { useState } from "react";
 import CampoTexto from "../CampoTexto";
 import ListaSuspensa from "../ListaSuspensa";
+import { useCategorias } from '../../componentes/CategoriasContext';
 
 
 const Modal = ({ isOpen, onClose, onSave, initialData }) => {
@@ -11,6 +12,7 @@ const Modal = ({ isOpen, onClose, onSave, initialData }) => {
     const [imagem, setImagem] = useState(initialData.imagem || '');
     const [video, setVideo] = useState(initialData.video || '');
     const [descricao, setDescricao] = useState(initialData.descricao || '');
+    const categorias = useCategorias();
 
     const handleSave = () => {
         onSave({
@@ -47,7 +49,7 @@ const Modal = ({ isOpen, onClose, onSave, initialData }) => {
                 />
                 <ListaSuspensa
                     label="Categoria"
-                    itens={initialData.categorias.map(cat => cat.nome)} 
+                    itens={categorias}
                     valor={categoria}
                     aoAlterado={setCategoria}
                 />

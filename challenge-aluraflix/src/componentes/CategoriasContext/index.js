@@ -6,15 +6,15 @@ const CategoriasContext = createContext([]);
 
 export const CategoriasProvider = ({ children }) => {
   const categorias = [
-    { nome: 'Ação' },
-    { nome: 'Aventura' },
-    { nome: 'Comédia' },
-    { nome: 'Drama' },
-    { nome: 'Ficção Científica' },
-    { nome: 'Terror' },
-    { nome: 'Romance' },
-    { nome: 'Animação' },
-    { nome: 'Documentário' }
+    'Ação',
+    'Aventura',
+    'Comédia',
+    'Drama',
+    'Ficção Científica',
+    'Terror',
+    'Romance',
+    'Animação',
+    'Documentário'
   ];
 
   return (

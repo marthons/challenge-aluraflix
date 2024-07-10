@@ -3,21 +3,14 @@ import Formulario from '../../componentes/Formulario';
 import './NovoVideo.css';
 import { FilmesContext } from '../../componentes/FilmesContext';
 import CardVideo from '../../componentes/CardVideo';
+import { useCategorias } from '../../componentes/CategoriasContext';
 
-const categorias = [
-  { nome: 'Ação' },
-  { nome: 'Aventura' },
-  { nome: 'Comédia' },
-  { nome: 'Drama' },
-  { nome: 'Ficção Científica' },
-  { nome: 'Terror' },
-  { nome: 'Romance' },
-  { nome: 'Animação' },
-  { nome: 'Documentário' }
-];
+
 
 const NovoVideo = () => {
-  const { setFilmes } = useContext(FilmesContext); 
+  const { setFilmes } = useContext(FilmesContext);
+
+  const categorias = useCategorias();
 
   const aoNovoFilmeAdicionado = (filme) => {
     setFilmes(prevFilmes => [...prevFilmes, filme]);
@@ -25,9 +18,9 @@ const NovoVideo = () => {
 
   return (
     <main className='novo-video'>
-      <Formulario 
-        categorias={categorias.map(cat => cat.nome)}
-        aoFilmeCadastrado={aoNovoFilmeAdicionado} 
+      <Formulario
+        categorias={categorias}
+        aoFilmeCadastrado={aoNovoFilmeAdicionado}
       />
       <CardVideo />
     </main>
