@@ -39,43 +39,44 @@ const Modal = ({ isOpen, onClose, onSave, initialData }) => {
         <div className="modal-overlay">
             <div className="modal-content">
                 <h3>Editar Card</h3>
-                <Botao className="modal-close" onClick={onClose}>X</Botao>
-
-                <CampoTexto
-                    label="Título"
-                    placeholder="Digite seu título"
-                    valor={titulo}
-                    aoAlterado={setTitulo}
-                />
-                <ListaSuspensa
-                    label="Categoria"
-                    itens={categorias}
-                    valor={categoria}
-                    aoAlterado={setCategoria}
-                />
-                <CampoTexto
-                    label="Imagem"
-                    placeholder="Informe o endereço da imagem"
-                    valor={imagem}
-                    aoAlterado={setImagem}
-                />
-                <CampoTexto
-                    label="Vídeo"
-                    placeholder="Digite a URL do vídeo"
-                    valor={video}
-                    aoAlterado={setVideo}
-                />
-                <CampoTexto
-                    label="Descrição"
-                    placeholder="Descreva seu vídeo aqui"
-                    valor={descricao}
-                    aoAlterado={setDescricao}
-                />
-                <div className="form-actions">
-                    <Botao type="button" onClick={handleSave}>Salvar</Botao>
-                    <Botao type="button" onClick={handleClear}>Limpar</Botao>
+                <div className="modal-form">
+                    <CampoTexto
+                        label="Título"
+                        placeholder="Digite seu título"
+                        valor={titulo}
+                        aoAlterado={setTitulo}
+                    />
+                    <ListaSuspensa
+                        label="Categoria"
+                        itens={categorias}
+                        valor={categoria}
+                        aoAlterado={setCategoria}
+                    />
+                    <CampoTexto
+                        label="Imagem"
+                        placeholder="Informe o endereço da imagem"
+                        valor={imagem}
+                        aoAlterado={setImagem}
+                    />
+                    <CampoTexto
+                        label="Vídeo"
+                        placeholder="Digite a URL do vídeo"
+                        valor={video}
+                        aoAlterado={setVideo}
+                    />
+                    <CampoTexto
+                        label="Descrição"
+                        placeholder="Descreva seu vídeo aqui"
+                        valor={descricao}
+                        aoAlterado={setDescricao}
+                    />
+                    <div className="form-actions">
+                        <Botao type="button" onClick={handleSave}>Salvar</Botao>
+                        <Botao type="button" onClick={handleClear}>Limpar</Botao>
+                    </div>
                 </div>
             </div>
+            <Botao className="modal-close" onClick={onClose}>X</Botao>
         </div>
 
     );
