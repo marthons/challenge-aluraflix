@@ -1,0 +1,67 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background: var(--cor-fundo-3);
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    position: relative;
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* .form-group {
+    display: flex;
+    flex-direction: column;
+  } */
+  
+  /* .form-group label {
+    margin-top: 10px;
+  }
+  
+  .form-group input, 
+  .form-group select, 
+  .form-group textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid var(--cor-fundo-4);
+    border-radius: 5px;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .form-actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #830024;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .form-actions button:hover {
+    background-color: #e16639;
+  }
+   */

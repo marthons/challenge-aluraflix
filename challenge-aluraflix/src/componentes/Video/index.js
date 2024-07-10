@@ -1,3 +1,4 @@
+import Botao from '../Botao';
 import './Video.css';
 
 const Video = ({ titulo, video, imagem, categoria, descricao, onEdit, onDelete }) => {
@@ -6,12 +7,12 @@ const Video = ({ titulo, video, imagem, categoria, descricao, onEdit, onDelete }
             <div className='video-content'>
                 <div className='video-left'>
                     <iframe
-                        src={video}
+                        src={`https://www.youtube.com/embed/${video}`}
                         title={titulo}
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
                     ></iframe>
-                    <h3>{titulo}</h3>
+                    <h4>{titulo}</h4>
                 </div>
                 <div className='video-right'>
                     <img src={imagem} alt={titulo} />
@@ -20,8 +21,8 @@ const Video = ({ titulo, video, imagem, categoria, descricao, onEdit, onDelete }
                         <p>{descricao}</p>
                     </div>
                     <div className='video-actions'>
-                        <button onClick={onEdit}>Reeditar</button>
-                        <button onClick={onDelete}>Deletar</button>
+                        <Botao onClick={onEdit}>Reeditar</Botao>
+                        <Botao onClick={onDelete}>Deletar</Botao>
                     </div>
                 </div>
             </div>

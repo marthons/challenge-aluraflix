@@ -32,8 +32,8 @@ const Formulario = (props) => {
   
     return (
       <div className='formulario-envio'>
-        <form className='form-group' onSubmit={aoSalvar}>
           <h3>Criar Card</h3>
+        <form className='form-group' onSubmit={aoSalvar}>
           <CampoTexto
             label="Título"
             placeholder="Digite seu título"
