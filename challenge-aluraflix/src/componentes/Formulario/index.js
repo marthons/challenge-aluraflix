@@ -38,7 +38,7 @@ const Formulario = (props) => {
             label="Título"
             placeholder="Digite seu título"
             valor={titulo}
-            aoAlterado={setTitulo} // Passa a função diretamente
+            aoAlterado={setTitulo} 
           />
           <CampoTexto
             label="Vídeo"

@@ -1,7 +1,8 @@
-import { useState } from 'react';
+import { useContext } from 'react';
 import Formulario from '../../componentes/Formulario';
 import './NovoVideo.css';
-import Video from '../../componentes/Video';
+import { FilmesContext } from '../../componentes/FilmesContext';
+import CardVideo from '../../componentes/CardVideo';
 
 const categorias = [
   { nome: 'Ação' },
@@ -16,30 +17,19 @@ const categorias = [
 ];
 
 const NovoVideo = () => {
-  const [filmes, setFilmes] = useState([]);
+  const { setFilmes } = useContext(FilmesContext); 
 
   const aoNovoFilmeAdicionado = (filme) => {
-    setFilmes([...filmes, filme]);
+    setFilmes(prevFilmes => [...prevFilmes, filme]);
   }
 
   return (
     <main className='novo-video'>
       <Formulario 
         categorias={categorias.map(cat => cat.nome)}
-        aoFilmeCadastrado={filme => aoNovoFilmeAdicionado(filme)} 
+        aoFilmeCadastrado={aoNovoFilmeAdicionado} 
       />
-       <div className='lista-de-videos'>
-        {filmes.map((filme, index) => (
-          <Video
-            key={index}
-            titulo={filme.titulo}
-            video={filme.video}
-            imagem={filme.imagem}
-            categoria={filme.categoria}
-            descricao={filme.descricao}
-          />
-        ))}
-      </div>
+      <CardVideo />
     </main>
   );
 };
