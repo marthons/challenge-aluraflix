@@ -4,6 +4,7 @@ import './NovoVideo.css';
 import { FilmesContext } from '../../componentes/FilmesContext';
 import CardVideo from '../../componentes/CardVideo';
 import { useCategorias } from '../../componentes/CategoriasContext';
+import axios from 'axios';
 
 
 
@@ -13,7 +14,13 @@ const NovoVideo = () => {
   const categorias = useCategorias();
 
   const aoNovoFilmeAdicionado = (filme) => {
-    setFilmes(prevFilmes => [...prevFilmes, filme]);
+    axios.post('http://localhost:3001/filmes', filme)
+      .then(response => {
+        setFilmes(prevFilmes => [...prevFilmes, response.data]);
+      })
+      .catch(error => {
+        console.error("Houve um erro ao adicionar o filme: ", error);
+      });
   }
 
   return (
