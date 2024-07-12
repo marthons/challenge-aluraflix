@@ -1,0 +1,146 @@
+{
+    "filmes": [
+        {
+            "id": 1,
+            "titulo": "Galdiador 2",
+            "categoria": "Ação",
+            "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrsRYhz1CWHpELfQ2MlXNN99z-ADpRlI63Nw&s",
+            "video": "https://www.youtube.com/watch?v=4rgYUipGJNo&pp=ygUHdHJhaWxlcg%3D%3D",
+            "descricao": "Uma nova geração de gladiadores surge em Roma, buscando vingança e redenção nas arenas brutais do Coliseu."
+        },
+        {
+            "id": 2,
+            "titulo": "Chico Bento",
+            "categoria": "Comédia",
+            "imagem": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSiftZSQ4cduRHgvfzjSq7d11R7rct4TBrJoYqVn4X8pGcwEJ8u5gw4O80TIaoK",
+            "video": "https://www.youtube.com/watch?v=wiWwJmRhMGI&pp=ygUOdHJhaWxlciBmaWxtZXM%3D",
+            "descricao": "A divertida vida no campo de Chico Bento e seus amigos é cheia de aventuras e lições importantes sobre amizade e respeito pela natureza."
+        },
+        {
+            "id": 3,
+            "titulo": "Atlas",
+            "categoria": "Ficção Cientifica",
+            "imagem": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS3XdDnKqtuWJsBhO_ucjeZu33b_GIebvGeYnnV9sPRamymikSxlIDu1FOgCOr1",
+            "video": "https://www.youtube.com/watch?v=KEbFBusYrsw&pp=ygUOdHJhaWxlciBmaWxtZXM%3D",
+            "descricao": "o futuro distante, uma inteligência artificial conhecida como Atlas deve decidir o destino da humanidade enquanto lida com dilemas éticos complexos."
+        },
+        {
+            "id": 4,
+            "titulo": "Divertidamente 2",
+            "categoria": "Animação",
+            "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmhr7gKYO1O_Yd7FSnf5mOjrzdNqkpTgZEeW5XbuZyakKzibv9mJB281g6NCnuoFOr5M4&usqp=CAU",
+            "video": "https://www.youtube.com/watch?v=yAZxx8t9zig&pp=ygUOdHJhaWxlciBmaWxtZXM%3D",
+            "descricao": "As emoções Alegria, Tristeza, Raiva, Medo e Nojinho estão de volta para enfrentar novos desafios e ajudar Riley a navegar pela adolescência."
+        },
+        {
+            "id": 5,
+            "titulo": "Auto da Compadecida 2",
+            "categoria": "Comédia",
+            "imagem": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6gs0CaDtxnPbU6vOTjiVXNhiiNKcnMlNb8yd9ZkZE474JAtqpsy-jZWg1tBpx",
+            "video": "https://www.youtube.com/watch?v=YroEX9bx0fM&pp=ygUOdHJhaWxlciBmaWxtZXM%3D",
+            "descricao": "Chicó e João Grilo retornam com novas aventuras hilariantes no sertão nordestino, trazendo humor e críticas sociais à tona."
+        },
+        {
+            "id": 6,
+            "titulo": "Alien: Romulus",
+            "categoria": "Terror",
+            "imagem": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSofdQrhVYcB9bHNncwN7aGuzmP9jh9YLWeamrPbnDxsBMpY0-j8reT4s9Q9GzA",
+            "video": "https://www.youtube.com/watch?v=-Eu7XVppK6Q&pp=ygUOdHJhaWxlciBmaWxtZXM%3D",
+            "descricao": "A saga Alien continua com novos horrores em um planeta distante onde a humanidade luta para sobreviver contra a ameaça xenomorfa."
+        },
+        {
+            "id": 7,
+            "titulo": "Moana 2",
+            "categoria": "Animação",
+            "imagem": "data:image/jpeg;base64,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",
+            "video": "https://www.youtube.com/watch?v=PqMzWzdosGo&pp=ygUOdHJhaWxlciBmaWxtZXM%3D",
+            "descricao": "Moana embarca em uma nova jornada épica pelos oceanos, descobrindo antigas tradições e enfrentando novos desafios para salvar sua ilha."
+        },
+        {
+            "id": 8,
+            "titulo": "Abigail",
+            "categoria": "Terror",
+            "imagem": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2jA8rp8JZJsyUJcsFFut6tIgxJ9u59PPpmTPcEPFXux8BwmcnxScfQ6sjyrE_",
+            "video": "https://www.youtube.com/watch?v=hfUTCb1MO04&pp=ygUOdHJhaWxlciBmaWxtZXM%3D",
+            "descricao": "Abigail descobre que possui poderes mágicos e embarca em uma aventura fantástica para salvar sua cidade de uma misteriosa doença."
+        },
+        {
+            "id": 9,
+            "titulo": "Instinto Materno",
+            "categoria": "Drama",
+            "imagem": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSYtvQrkH5ngCNaxkF7SY84FWc1pVawDV6d2cH5WUjcHP_SBmAWR5W62MTnasnw",
+            "video": "https://www.youtube.com/watch?v=Uy92T-_1FYs&pp=ygUUdHJhaWxlciBmaWxtZXMgZHJhbWE%3D",
+            "descricao": " Um drama intenso sobre uma mãe que luta para proteger seus filhos em um mundo cada vez mais caótico e violento."
+        },
+        {
+            "id": 10,
+            "titulo": "Close",
+            "categoria": "Drama",
+            "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIqEeJ3xq5iEHiKMMRI5SOJ3YZRy5RapBmWg&s",
+            "video": "https://www.youtube.com/watch?v=dlNWImeXzsQ&pp=ygUUdHJhaWxlciBmaWxtZXMgZHJhbWE%3D",
+            "descricao": "Um filme emocionante que explora a profunda amizade e os desafios enfrentados por dois adolescentes, Leo e Remi, cuja conexão é testada por forças externas e internas. É uma história de crescimento, identidade e a complexidade dos laços humanos."
+        },
+        {
+            "id": 11,
+            "titulo": "Democracia em Vertigem",
+            "categoria": "Documentário",
+            "imagem": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSWmld1l5g6I5ZZXcVG2a4xdVC-rR2z-0N0zWmhL8O1Ob0-p68T9qndHJ8nOOFl",
+            "video": "https://www.youtube.com/watch?v=vwZ5m10y1rQ&pp=ygUadHJhaWxlciBmaWxtZXMgZG9jdW1ldGFyaW8%3D",
+            "descricao": "Um olhar profundo sobre a crise política no Brasil, explorando os eventos que levaram ao impeachment da presidente Dilma Rousseff."
+        },
+        {
+            "id": 12,
+            "titulo": "Chorão",
+            "categoria": "Documentário",
+            "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2Q_bL5pjfJxR6AlILfbc1X7avyv8KdS7ouv5O-sxw3t6RA9Rj8Y4JsMCXXf1O",
+            "video": "https://www.youtube.com/watch?v=1q05D1GO4eo&pp=ygUadHJhaWxlciBmaWxtZXMgZG9jdW1ldGFyaW8%3D",
+            "descricao": "documentário emocionante sobre a vida e a carreira do lendário vocalista da banda Charlie Brown Jr., Chorão."
+        },
+        {
+            "id": 13,
+            "titulo": "Capitão America",
+            "categoria": "Ação",
+            "imagem": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQSKTYIRlcH0tU3ZYqx_uZatSqZK8CyI6V9eRSd0jCySkbpgBaCXQcjaFNnUcCL",
+            "video": "https://www.youtube.com/watch?v=-006iHDHK34&pp=ygUkdHJhaWxlciBkbyBmaWxtZSBjYXBpdMOjbyBhbcOpcmljYSAx",
+            "descricao": "Após ser injetado com um soro especial durante a Segunda Guerra Mundial, Steve Rogers se torna o supersoldado conhecido como Capitão América e lidera os aliados na batalha contra o mal."
+          }
+    ],
+    "categorias": [
+        {
+            "id": 1,
+            "nome": "Ação"
+        },
+        {
+            "id": 2,
+            "nome": "Aventura"
+        },
+        {
+            "id": 3,
+            "nome": "Comédia"
+        },
+        {
+            "id": 4,
+            "nome": "Drama"
+        },
+        {
+            "id": 5,
+            "nome": "Ficção Científica"
+        },
+        {
+            "id": 6,
+            "nome": "Terror"
+        },
+        {
+            "id": 7,
+            "nome": "Romance"
+        },
+        {
+            "id": 8,
+            "nome": "Animação"
+        },
+        {
+            "id": 9,
+            "nome": "Documentário"
+        }
+    ]
+}
