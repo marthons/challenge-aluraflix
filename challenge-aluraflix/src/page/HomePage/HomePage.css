@@ -7,6 +7,10 @@
     background-color: var(--cor-fundo-2);
     min-height: 100vh;
   }
+
+  .filme-container {
+    align-items: center;
+  }
   
   .home-page h1 {
     font-size: 3rem;

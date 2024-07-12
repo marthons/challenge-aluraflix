@@ -1,6 +1,8 @@
-import Video from "../Video";
-import Modal from "../Modal";
-import useFilmesContext from "../useFilmesContext";
+import React from 'react';
+import Modal from '../Modal';
+import useFilmesContext from '../useFilmesContext';
+import FilmesPorCategoria from '../FilmesPorCategoria';
+import './CardVideo.css';
 
 const CardVideo = () => {
     const {
@@ -11,34 +13,26 @@ const CardVideo = () => {
         handleDelete,
         handleSave,
         setIsModalOpen,
-      } = useFilmesContext();
-    
-      return (
-        <>
-          <div className='lista-de-videos'>
-            {filmes.map((filme, index) => (
-              <Video
-                key={index}
-                titulo={filme.titulo}
-                video={filme.video}
-                imagem={filme.imagem}
-                categoria={filme.categoria}
-                descricao={filme.descricao}
-                onEdit={() => handleEdit(index)}
-                onDelete={() => handleDelete(index)}
-              />
-            ))}
-          </div>
-          {isModalOpen && (
-            <Modal 
-              isOpen={isModalOpen}
-              onClose={() => setIsModalOpen(false)}
-              onSave={handleSave}
-              initialData={{ ...currentFilm, categorias: filmes.map(f => f.categoria) }}
-            />
-          )}
-        </>
-      );
-    }
-    
+    } = useFilmesContext();
+
+    return (
+        <main className='container'>
+                <FilmesPorCategoria
+                    filmes={filmes}
+                    handleEdit={handleEdit}
+                    handleDelete={handleDelete}
+                />
+
+            {isModalOpen && (
+                <Modal
+                    isOpen={isModalOpen}
+                    onClose={() => setIsModalOpen(false)}
+                    onSave={handleSave}
+                    initialData={{ ...currentFilm, categorias: filmes.map(f => f.categoria) }}
+                />
+            )}
+        </main>
+    );
+}
+
 export default CardVideo;
